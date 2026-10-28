@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PSI Finder — What Tire Pressure Should Your Tires Be? | RoadReady</title>
+<meta name="description" content="Find your recommended tire pressure by vehicle type, and where the real number lives on your car (hint: not the tire sidewall).">
+<style>
+body{font-family:system-ui,-apple-system,Arial,sans-serif;margin:0;background:#0f1113;color:#e8e8e8;line-height:1.55}
+header{background:#17191c;padding:28px 20px;border-bottom:3px solid #ffb400}
+header h1{margin:0;font-size:26px}header p{color:#b9b9b9;max-width:640px}
+main{max-width:680px;margin:0 auto;padding:24px 20px}
+.card{background:#1b1e22;border:1px solid #2a2e33;border-radius:12px;padding:20px;margin:18px 0}
+label{font-weight:700;display:block;margin-bottom:8px}
+select{width:100%;padding:12px;font-size:16px;border-radius:8px;border:1px solid #444;background:#111;color:#fff}
+button{width:100%;padding:13px;font-size:16px;font-weight:800;border:0;border-radius:8px;background:#ffb400;color:#111;cursor:pointer;margin-top:12px}
+#result{display:none;margin-top:16px;padding:16px;background:#111;border-left:4px solid #ffb400;border-radius:8px}
+#result b{font-size:22px}
+.cta{display:block;text-align:center;background:#ffb400;color:#111;font-weight:800;text-decoration:none;padding:14px;border-radius:10px;margin:20px 0}
+.muted{color:#b9b9b9;font-size:14px}
+a{color:#ffb400}
+</style>
+</head>
+<body>
+<header>
+<h1>PSI Finder</h1>
+<p>Your tires have one right number — and it is NOT the number printed on the tire sidewall. That is the tire's maximum, not your car's recommendation. Your real number lives on the driver's door jamb sticker.</p>
+</header>
+<main>
+<div class="card">
+<label for="v">What are you driving?</label>
+<select id="v">
+<option value="car">Car / sedan / hatchback</option>
+<option value="suv">SUV / truck</option>
+<option value="moto">Motorcycle</option>
+<option value="bike">Bicycle</option>
+</select>
+<button onclick="find()">Find my PSI</button>
+<div id="result"></div>
+</div>
+
+<div class="card">
+<h2>Where the real number lives</h2>
+<p>Open the driver's door and look at the sticker on the door jamb (sometimes inside the fuel door or glove box). It lists the front and rear PSI your car was engineered for. Check pressure when tires are cold — before driving, or at least 3 hours after parking — because driving heats tires and raises the reading.</p>
+<p class="muted">Typical ranges only — your door jamb sticker overrules everything on this page. Motorcycles vary the most by model and load, so the sticker (or owner's manual) is the only number to trust there.</p>
+</div>
+
+<div class="card">
+<h2>Once you know the number, filling takes a minute</h2>
+<p>Dial the number into a gauge, fill, and stop at the number. The RoadReady kit's digital gauge reads live and auto-stops at your PSI — no guessing, no over-inflation.</p>
+<a class="cta" href="https://rag3verse-coder.github.io/roadready-supply/">Fill it with the RoadReady kit — $49.99</a>
+<p class="muted">Also see: <a href="https://rag3verse-coder.github.io/roadready-supply/tpms-decoder.html">TPMS Decoder — your tire light is on, what now?</a></p>
+</div>
+</main>
+<script>
+const data={
+car:{range:"30–35 PSI",tip:"Most sedans sit at 32–35. Front and rear are often the same — check both numbers on the sticker."},
+suv:{range:"35–45 PSI",tip:"SUVs and trucks run higher, and LT (light truck) tires higher still. Towing or a loaded bed usually means the higher end — your sticker lists normal vs loaded."},
+moto:{range:"28–42 PSI (model-dependent)",tip:"Motorcycle pressure varies widely by bike, tire, and whether you ride solo or two-up. Use your manual or the sticker on the swingarm — never guess."},
+bike:{range:"Varies by tire type",tip:"Road bikes run high, mountain bikes low, hybrids in between. The range printed on the tire sidewall is your guide here — stay inside it."}
+};
+function find(){
+const v=document.getElementById('v').value;
+const d=data[v];
+const r=document.getElementById('result');
+r.style.display='block';
+r.innerHTML='<b>'+d.range+'</b><p>'+d.tip+'</p><p class="muted">Check it cold, fill to the sticker number, recheck monthly — tires lose roughly 1 PSI a month on their own.</p>';
+}
+</script>
+</body>
+</html>
