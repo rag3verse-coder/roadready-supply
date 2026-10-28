@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RoadReady Supply Co. — The Tire Kit That Never Leaves You Stranded</title>
+<meta name="description" content="Cordless tire inflator kit with dual power (battery + 12V), auto-stop, digital gauge, 150 PSI and a hard case. Fanttik-class power for $49.99. Ships fast from a US warehouse.">
+<!-- TODO(Vex): replace roadreadysupply.co with the live domain at publish. -->
+<meta property="og:type" content="product">
+<meta property="og:site_name" content="RoadReady Supply Co.">
+<meta property="og:title" content="The Tire Kit That Never Leaves You Stranded — $49.99">
+<meta property="og:description" content="Dual power (battery + 12V), auto-stop, 150 PSI, hard case included. The brand-name class sells for $63–$90. Ours is $49.99.">
+<meta property="og:image" content="https://roadreadysupply.co/hero.webp">
+<meta property="og:url" content="https://roadreadysupply.co/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://roadreadysupply.co/#org",
+      "name": "RoadReady Supply Co.",
+      "url": "https://roadreadysupply.co/",
+      "email": "support@roadreadysupply.co",
+      "slogan": "The tire kit that never leaves you stranded.",
+      "sameAs": []
+    },
+    {
+      "@type": "Product",
+      "name": "RoadReady Tire Inflator Kit",
+      "image": "https://roadreadysupply.co/hero.webp",
+      "description": "Cordless tire inflator kit with dual power (rechargeable battery + 12V car plug), auto-stop, digital gauge, 150 PSI max, coiled hose, nozzle set and hard carry case.",
+      "brand": { "@id": "https://roadreadysupply.co/#org" },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://roadreadysupply.co/#offer",
+        "priceCurrency": "USD",
+        "price": "49.99",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      }
+    }
+  ]
+}
+</script>
+<style>
+  :root{
+    --bg:#0b0c0e; --bg2:#121317; --card:#17181d; --line:#26272e;
+    --txt:#f4f4f5; --mut:#a7aab3; --amber:#ffa31a; --amber2:#ff8a00;
+    --green:#3ddc84; --radius:16px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  a{color:inherit}
+  /* announcement + header */
+  .announce{background:linear-gradient(90deg,var(--amber2),var(--amber));color:#161006;text-align:center;font-weight:700;font-size:14px;padding:9px 12px;letter-spacing:.02em}
+  header{position:sticky;top:0;z-index:50;background:rgba(11,12,14,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+  .logo{font-weight:900;font-size:20px;letter-spacing:.04em}
+  .logo span{color:var(--amber)}
+  .logo small{display:block;font-size:10px;font-weight:600;letter-spacing:.34em;color:var(--mut)}
+  /* buttons */
+  .btn{display:inline-block;background:linear-gradient(180deg,var(--amber),var(--amber2));color:#181003;font-weight:800;border:none;border-radius:12px;padding:15px 28px;font-size:17px;text-decoration:none;cursor:pointer;box-shadow:0 6px 24px rgba(255,154,0,.28);transition:transform .08s ease, box-shadow .2s ease;text-align:center}
+  .btn:hover{transform:translateY(-1px);box-shadow:0 10px 30px rgba(255,154,0,.36)}
+  .btn.ghost{background:transparent;color:var(--txt);border:1.5px solid #3a3b44;box-shadow:none}
+  .btn.small{padding:10px 18px;font-size:15px}
+  .price-now{font-size:34px;font-weight:900}
+  .price-was{color:var(--mut);text-decoration:line-through;font-size:19px;margin-right:8px}
+  .save{display:inline-block;background:#123324;color:var(--green);border:1px solid #1f5c3a;font-weight:800;font-size:12.5px;padding:3px 9px;border-radius:999px;margin-left:8px;vertical-align:middle}
+  /* hero */
+  .hero{padding:44px 0 30px;background:radial-gradient(900px 420px at 75% -60px,rgba(255,150,0,.16),transparent 60%)}
+  .hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:38px;align-items:center}
+  .hero h1{font-size:44px;line-height:1.08;font-weight:900;letter-spacing:-.01em}
+  .hero h1 em{font-style:normal;color:var(--amber)}
+  .hero p.sub{color:var(--mut);font-size:18px;margin:16px 0 20px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
+  .chip{border:1px solid var(--line);background:var(--bg2);border-radius:999px;padding:6px 12px;font-size:13.5px;font-weight:700}
+  .chip b{color:var(--amber)}
+  .hero-img{border-radius:20px;border:1px solid var(--line);box-shadow:0 24px 60px rgba(0,0,0,.55)}
+  .cta-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:20px}
+  .trust{display:flex;gap:18px;flex-wrap:wrap;margin-top:18px;color:var(--mut);font-size:13.5px;font-weight:600}
+  .trust b{color:var(--txt)}
+  /* sections */
+  section{padding:52px 0}
+  h2{font-size:31px;font-weight:900;letter-spacing:-.01em;margin-bottom:10px}
+  .lede{color:var(--mut);font-size:17px;max-width:720px}
+  .pain{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+  .card .ic{font-size:26px;margin-bottom:10px}
+  .card h3{font-size:18px;margin-bottom:7px}
+  .card p{color:var(--mut);font-size:15px}
+  /* compare */
+  table{width:100%;border-collapse:collapse;margin-top:24px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+  th,td{padding:14px 16px;text-align:left;font-size:15px;border-bottom:1px solid var(--line)}
+  th{background:#1d1e24;font-size:13px;letter-spacing:.07em;text-transform:uppercase;color:var(--mut)}
+  tr.us td{background:rgba(255,163,26,.08);font-weight:700}
+  tr.us td:first-child{color:var(--amber)}
+  td.dim{color:var(--mut)}
+  .yes{color:var(--green);font-weight:800}.no{color:#ff6b5e;font-weight:800}
+  /* box + steps */
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:26px}
+  .list{list-style:none}
+  .list li{padding:9px 0;border-bottom:1px dashed #2b2c34;display:flex;justify-content:space-between;font-size:15.5px}
+  .list li:last-child{border-bottom:none}
+  .list li span{color:var(--mut)}
+  .steps{counter-reset:s}
+  .steps .card h3::before{counter-increment:s;content:counter(s);display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:var(--amber);color:#181003;font-size:15px;margin-right:9px;vertical-align:2px}
+  /* offers */
+  .offers{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:26px}
+  .offer{background:var(--card);border:1.5px solid var(--line);border-radius:20px;padding:28px;position:relative}
+  .offer.best{border-color:var(--amber);box-shadow:0 0 0 1px var(--amber),0 18px 44px rgba(255,150,0,.13)}
+  .badge{position:absolute;top:-13px;left:22px;background:var(--amber);color:#181003;font-weight:900;font-size:12.5px;letter-spacing:.06em;padding:5px 12px;border-radius:999px}
+  .offer h3{font-size:21px;margin-bottom:4px}
+  .offer .per{color:var(--mut);font-size:14px;margin-bottom:14px}
+  .offer ul{list-style:none;margin:0 0 20px}
+  .offer ul li{padding:5px 0;font-size:15px;color:#d8d9de}
+  .offer ul li::before{content:"✓ ";color:var(--green);font-weight:900}
+  .shipping{background:#101820;border:1.5px solid #274156;border-radius:20px;padding:28px;margin-top:22px}
+  .shipping h3{font-size:23px;margin-bottom:6px}
+  .shipping p{color:var(--mut);font-size:15px}
+  .ship-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+  .ship-grid .full{grid-column:1/-1}
+  .shipping label{display:block;font-size:13px;font-weight:700;color:#d8d9de}
+  .shipping input,.shipping select{width:100%;margin-top:6px;background:#0b0f14;border:1.5px solid #33343c;color:var(--txt);border-radius:11px;padding:13px 14px;font-size:16px}
+  .shipping .btn{margin-top:16px}
+  #continuePayment{display:none;width:100%;margin-top:12px}
+  #shippingMsg{margin-top:12px;font-weight:700}
+  @media(max-width:700px){.ship-grid{grid-template-columns:1fr}.ship-grid .full{grid-column:auto}}
+  .addons{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+  .addon{background:var(--bg2);border:1px dashed #3a3b44;border-radius:var(--radius);padding:20px;display:flex;justify-content:space-between;align-items:center;gap:14px}
+  .addon h4{font-size:16px}.addon p{color:var(--mut);font-size:13.5px}
+  /* guarantee + faq */
+  .guarantee{background:linear-gradient(180deg,#141019,#100e14);border:1px solid #2c2333;border-radius:20px;padding:30px;text-align:center}
+  .guarantee h3{font-size:24px;margin-bottom:8px}
+  .guarantee p{color:var(--mut);max-width:640px;margin:0 auto}
+  details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-top:10px}
+  summary{font-weight:800;cursor:pointer;font-size:16px}
+  details p{color:var(--mut);margin-top:8px;font-size:15px}
+  /* capture */
+  .capture{background:var(--bg2);border:1px solid var(--line);border-radius:20px;padding:30px;text-align:center;margin-top:26px}
+  .capture form{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px}
+  .capture input[type=email]{background:#0e0f12;border:1.5px solid #33343c;color:var(--txt);border-radius:12px;padding:14px 16px;font-size:16px;min-width:280px}
+  /* footer + sticky bar */
+  footer{border-top:1px solid var(--line);padding:30px 0 90px;color:var(--mut);font-size:13.5px}
+  .stickybar{position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(13,14,17,.96);border-top:1px solid var(--line);padding:10px 16px;display:none;align-items:center;justify-content:space-between;gap:12px}
+  .stickybar .p{font-weight:900;font-size:18px}
+  .stickybar .p s{color:var(--mut);font-weight:500;font-size:14px;margin-right:6px}
+  @media(max-width:860px){
+    .hero-grid,.cards,.two,.offers,.addons{grid-template-columns:1fr}
+    .hero h1{font-size:34px}
+    .stickybar{display:flex}
+    th,td{padding:11px 10px;font-size:13.5px}
+  }
+</style>
+</head>
+<body>
+
+<div class="announce">LAUNCH PRICING — $49.99 (reg. $79.99) · Fast shipping from a US warehouse · 30-day road-test returns</div>
+
+<header>
+  <div class="wrap nav">
+    <div class="logo">ROAD<span>READY</span><small>SUPPLY CO.</small></div>
+    <a class="btn small" data-buy="single" href="#offer">Get the Kit — $49.99</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>The Tire Kit That <em>Never</em> Leaves You Stranded.</h1>
+      <p class="sub">A full-power cordless inflator kit — battery <b>or</b> your car's 12V — with auto-stop, a digital gauge, 150 PSI, and a hard case. Set it, press it, roll.</p>
+      <div class="chips">
+        <div class="chip"><b>150</b> PSI max</div>
+        <div class="chip"><b>Dual</b> power: battery + 12V</div>
+        <div class="chip"><b>Auto-stop</b> at your PSI</div>
+        <div class="chip"><b>Case</b> included</div>
+      </div>
+      <div>
+        <span class="price-was">$79.99</span><span class="price-now">$49.99</span><span class="save">SAVE 38%</span>
+      </div>
+      <div class="cta-row">
+        <a class="btn" data-buy="single" href="#offer">Get Yours — $49.99</a>
+        <a class="btn ghost" data-buy="twoPack" href="#offer">2-Pack — $89.99</a>
+      </div>
+      <div class="trust">
+        <div>🚚 <b>Ships from the USA</b> — no overseas wait</div>
+        <div>↩️ <b>30-day</b> road-test returns</div>
+        <div>🔒 <b>Secure</b> checkout</div>
+      </div>
+    </div>
+    <div><img class="hero-img" src="hero.webp" alt="RoadReady cordless tire inflator kit with hard case, coiled hose, 12V and USB-C cables"></div>
+  </div>
+</div>
+
+<!-- PROBLEM -->
+<section class="pain">
+  <div class="wrap">
+    <h2>That dashboard light always picks the worst moment.</h2>
+    <p class="lede">Late for work. Kids in the back. Rain coming down. The gas-station air pump is broken, or it wants $2 in quarters you don't have, and the "free air" station is three towns away. A tow costs more than this kit — and takes two hours longer.</p>
+    <div class="cards">
+      <div class="card"><div class="ic">⏱️</div><h3>Minutes, not hours</h3><p>Top off a low tire in about a minute. A completely flat spare gets you rolling to the shop instead of waiting on the shoulder.</p></div>
+      <div class="card"><div class="ic">🎯</div><h3>Set it and forget it</h3><p>Dial your PSI, press start. The digital gauge reads it live and auto-stops at your number — no guesswork, no over-inflation.</p></div>
+      <div class="card"><div class="ic">🧰</div><h3>Every vehicle you own</h3><p>Cars, trucks, SUVs, motorcycles, bikes, and the basketball in the garage. One kit covers the whole driveway.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US / COMPARE -->
+<section>
+  <div class="wrap">
+    <h2>Why drivers buy it from us</h2>
+    <p class="lede">Three reasons — and the first one is the one the cheap pumps can't copy.</p>
+    <div class="cards">
+      <div class="card"><div class="ic">🔋</div><h3>Dual power. Never a brick.</h3><p>Runs on its rechargeable battery <b>or</b> straight off your car's 12V plug. The $25 mini-pumps are battery-only — the night the battery's dead is the night your tire is flat. Ours works anyway.</p></div>
+      <div class="card"><div class="ic">🎒</div><h3>A kit, not a pump</h3><p>150 PSI unit, coiled hose, nozzle set, USB-C + 12V cables, and a hard case that keeps it all in one grab. Amazon sells you a pump. We sell you never being stranded.</p></div>
+      <div class="card"><div class="ic">🏷️</div><h3>One honest price</h3><p>No clipping three coupons to find the real number. $49.99, printed plain — for a class of inflator the brand names sell at $63 to $90.</p></div>
+    </div>
+
+    <table>
+      <tr><th></th><th>Price</th><th>Dual power (battery + 12V)</th><th>Hard case</th><th>150 PSI</th></tr>
+      <tr class="us"><td>RoadReady Kit</td><td>$49.99</td><td class="yes">Yes</td><td class="yes">Included</td><td class="yes">Yes</td></tr>
+      <tr><td>Fanttik X8 APEX</td><td class="dim">$63–$90</td><td class="no">Battery only</td><td class="dim">Soft pouch</td><td class="yes">Yes</td></tr>
+      <tr><td>AstroAI L7 mini</td><td class="dim">$23–$40</td><td class="no">Battery only</td><td class="no">No</td><td class="dim">Top-offs only</td></tr>
+      <tr><td>DEWALT 20V (bare tool)</td><td class="dim">$169</td><td class="dim">Needs their battery</td><td class="no">No</td><td class="yes">Yes</td></tr>
+    </table>
+    <p style="color:var(--mut);font-size:13px;margin-top:10px">Competitor prices checked October 2026, Amazon/Best Buy listings. Specs per manufacturer pages.</p>
+  </div>
+</section>
+
+<!-- BOX + HOW -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="two">
+      <div class="card">
+        <h3 style="margin-bottom:8px">What's in the box</h3>
+        <ul class="list">
+          <li>Cordless inflator unit <span>150 PSI · auto-stop</span></li>
+          <li>Digital gauge display <span>PSI / BAR / KPA</span></li>
+          <li>Coiled air hose <span>quick-connect</span></li>
+          <li>Nozzle set <span>cars · bikes · balls · inflatables</span></li>
+          <li>12V car power cable <span>the never-dead backup</span></li>
+          <li>USB-C charging cable <span></span></li>
+          <li>Hard carry case <span>trunk-ready</span></li>
+          <li>LED work light <span>built in</span></li>
+        </ul>
+      </div>
+      <div class="steps" style="display:grid;gap:16px">
+        <div class="card"><h3>Connect</h3><p>Screw the hose onto the valve stem. Ten seconds, no tools.</p></div>
+        <div class="card"><h3>Set your PSI</h3><p>The number's on your driver's door jamb. Dial it in once — the kit remembers how you like it.</p></div>
+        <div class="card"><h3>Press and roll</h3><p>It fills, it stops itself at your number, you drive. Whole thing fits back in the case in the trunk.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OFFER -->
+<section id="offer" style="padding-top:0">
+  <div class="wrap">
+    <h2>Pick your kit</h2>
+    <p class="lede">Launch pricing while the first batch lasts. Every kit ships from a US warehouse with tracking.</p>
+    <div class="offers">
+      <div class="offer">
+        <h3>The Kit</h3>
+        <div class="per">One inflator kit — your trunk, covered.</div>
+        <div><span class="price-was">$79.99</span><span class="price-now">$49.99</span></div>
+        <ul>
+          <li>Full kit: unit, hose, nozzles, case</li>
+          <li>Dual power: battery + 12V</li>
+          <li>30-day road-test returns</li>
+        </ul>
+        <a class="btn" data-buy="single" href="#" style="width:100%">Get the Kit — $49.99</a>
+      </div>
+      <div class="offer best">
+        <div class="badge">BEST VALUE — SAVE $70</div>
+        <h3>The 2-Pack</h3>
+        <div class="per">One for your trunk, one for hers. Or the perfect gift for a new driver.</div>
+        <div><span class="price-was">$159.98</span><span class="price-now">$89.99</span></div>
+        <ul>
+          <li>Two complete kits</li>
+          <li>Second kit effectively half price</li>
+          <li>30-day road-test returns, both kits</li>
+        </ul>
+        <a class="btn" data-buy="twoPack" href="#" style="width:100%">Get the 2-Pack — $89.99</a>
+      </div>
+    </div>
+
+    <div class="shipping" id="shipping">
+      <h3>Where should we ship it?</h3>
+      <p><b style="color:var(--txt)">Step 1:</b> Enter the delivery address here. <b style="color:var(--txt)">Step 2:</b> Continue to Stripe to pay. Use the same email in both places so we can match your payment to this address.</p>
+      <form id="shippingForm" action="https://formsubmit.co/ajax/Rag3verse@gmail.com" method="POST">
+        <div class="ship-grid">
+          <label class="full">Kit
+            <select name="product" id="shippingProduct">
+              <option value="single">RoadReady Tire Inflator Kit — $49.99</option>
+              <option value="twoPack">RoadReady Tire Inflator Kit — 2-Pack — $89.99</option>
+            </select>
+          </label>
+          <label>Full name<input name="full_name" autocomplete="name" required></label>
+          <label>Email for the order<input type="email" name="email" autocomplete="email" required></label>
+          <label class="full">Street address<input name="street_address" autocomplete="street-address" required></label>
+          <label>Apt / suite (optional)<input name="address_line_2" autocomplete="address-line2"></label>
+          <label>Phone (optional)<input type="tel" name="phone" autocomplete="tel"></label>
+          <label>City<input name="city" autocomplete="address-level2" required></label>
+          <label>State<input name="state" autocomplete="address-level1" required></label>
+          <label>ZIP code<input name="zip" autocomplete="postal-code" inputmode="numeric" required></label>
+          <label>Country<input name="country" value="United States" required></label>
+        </div>
+        <input type="hidden" name="_subject" value="RoadReady — SHIPPING DETAILS (match to Stripe payment by email)">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="order_reference" id="orderReference">
+        <input type="text" name="_honey" style="display:none">
+        <button class="btn" type="submit">Save Shipping Address</button>
+      </form>
+      <p id="shippingMsg" aria-live="polite"></p>
+      <a class="btn" id="continuePayment" href="#">Continue to Secure Payment</a>
+      <p style="margin-top:10px;font-size:13.5px">Payment is completed on Stripe. Do not pay first — we need this address saved before checkout so the kit can be fulfilled.</p>
+    </div>
+
+    <div class="addons">
+      <div class="addon">
+        <div><h4>➕ LED Road Flares — $14.99</h4><p>Be seen on the shoulder. Magnetic, waterproof, no batteries to corrode.</p></div>
+        <a class="btn small ghost" data-buy="flares" href="#">Add</a>
+      </div>
+      <div class="addon">
+        <div><h4>➕ Pro Tire Gauge — $9.99</h4><p>A second accurate gauge for the glove box or the garage wall.</p></div>
+        <a class="btn small ghost" data-buy="gauge" href="#">Add</a>
+      </div>
+    </div>
+
+    <div class="guarantee" style="margin-top:26px">
+      <h3>The 30-Day Road Test</h3>
+      <p>Put it in your trunk for a month. Top off your tires, lend it to a neighbor, run it off the 12V. If it doesn't earn its place, send it back within 30 days for a refund. We can offer that because stranded drivers don't return these — they buy the second one as a gift.</p>
+    </div>
+
+    <details><summary>Will it fit my vehicle?</summary><p>Yes. The hose uses the universal Schrader valve found on virtually every car, truck, SUV, and motorcycle tire, and the nozzle set covers Presta bike valves, sports balls, and inflatables. If it has a tire, this kit airs it.</p></details>
+    <details><summary>What if the battery is dead when I need it?</summary><p>Plug in the included 12V cable and run it straight off your car. That's the dual-power difference — the kit works even with a completely flat internal battery.</p></details>
+    <details><summary>How fast is shipping?</summary><p>Orders ship from a US warehouse with tracking, typically arriving in 3–5 business days. No overseas slow boat, no mystery carrier.</p></details>
+    <details><summary>How long does a fill take?</summary><p>A typical low car tire (for example 30 → 36 PSI) takes about a minute. A fully flat tire takes longer — the kit is built for top-offs and roadside rescue, not shop-duty volume.</p></details>
+    <details><summary>What's the return policy?</summary><p>30 days. If the kit doesn't earn its place in your trunk, return it for a refund — see the Road Test above.</p></details>
+
+    <div class="capture">
+      <h3 style="font-size:22px">Not ready yet? Take $5 off for later.</h3>
+      <p style="color:var(--mut)">Join the list and we'll send a $5 code — plus one short email when the price moves. No spam, ever.</p>
+      <!-- Email capture: FormSubmit AJAX → Rag3verse@gmail.com (the JV list inbox).
+           Autoresponse delivers code ROAD5. Henry must enable "promotion codes"
+           on the Stripe links and create ROAD5 ($5 off) for the code to redeem. -->
+      <form id="captureForm" action="https://formsubmit.co/ajax/Rag3verse@gmail.com" method="POST">
+        <input type="email" name="email" required placeholder="your@email.com" aria-label="Email address">
+        <input type="hidden" name="_subject" value="RoadReady — new $5 code signup">
+        <input type="hidden" name="_autoresponse" value="You're in. Here's your $5 code for the RoadReady Tire Inflator Kit: ROAD5 — use it at checkout. The kit: dual power (battery + 12V), auto-stop, 150 PSI, hard case included — $49.99 launch price. Never get stranded again. — RoadReady Supply Co.">
+        <input type="text" name="_honey" style="display:none">
+        <button class="btn" type="submit">Send My $5 Code</button>
+      </form>
+      <p id="captureMsg" style="margin-top:12px;font-weight:700;color:var(--green)"></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><b style="color:var(--txt)">ROADREADY SUPPLY CO.</b> — The tire kit that never leaves you stranded.</p>
+    <p style="margin-top:6px">Support: <!-- TODO(Vex): confirm support inbox --> support@roadreadysupply.co · Secure checkout powered by Stripe.</p>
+    <p style="margin-top:6px">© 2026 RoadReady Supply Co. All rights reserved.</p>
+  </div>
+</footer>
+
+<div class="stickybar">
+  <div class="p"><s>$79.99</s>$49.99</div>
+  <a class="btn small" data-buy="single" href="#offer">Get the Kit</a>
+</div>
+
+<script>
+/* ============================================================
+   VEX WIRING POINT — paste Henry's Stripe Payment Links here.
+   Until a link is pasted, its button safely scrolls to #offer.
+   single  = Tire Inflator Kit $49.99 (one-time)
+   twoPack = Tire Inflator Kit 2-Pack $89.99 (one-time)
+   flares  = LED Road Flares $14.99 (add-on)
+   gauge   = Pro Tire Gauge $9.99 (add-on)
+   ============================================================ */
+const LINKS = {
+  single:  "https://buy.stripe.com/eVqeVf5S9gV3g82gdq6kg0g",
+  twoPack: "https://buy.stripe.com/6oUcN7fsJ0W5bRM2mA6kg0f",
+  flares:  "",
+  gauge:   ""
+};
+var PRODUCT_DETAILS = {
+  single: {label: "RoadReady Tire Inflator Kit", price: "$49.99"},
+  twoPack: {label: "RoadReady Tire Inflator Kit — 2-Pack", price: "$89.99"}
+};
+var selectedProduct = "single";
+function chooseProduct(key, scroll) {
+  if (!PRODUCT_DETAILS[key]) return;
+  selectedProduct = key;
+  var select = document.getElementById("shippingProduct");
+  if (select) select.value = key;
+  sessionStorage.removeItem("roadready_payment_url");
+  document.getElementById("continuePayment").style.display = "none";
+  document.getElementById("shippingMsg").textContent = "Shipping details needed for: " + PRODUCT_DETAILS[key].label + " — " + PRODUCT_DETAILS[key].price + ".";
+  if (scroll) document.getElementById("shipping").scrollIntoView({behavior: "smooth", block: "start"});
+}
+document.querySelectorAll("[data-buy]").forEach(function(el){
+  var key = el.getAttribute("data-buy");
+  var url = LINKS[key];
+  if (key === "single" || key === "twoPack") {
+    el.setAttribute("href", "#shipping");
+    el.addEventListener("click", function(e){ e.preventDefault(); chooseProduct(key, true); });
+  } else if (url) {
+    el.setAttribute("href", url);
+  }
+});
+document.getElementById("shippingProduct").addEventListener("change", function(e){ chooseProduct(e.target.value, false); });
+document.getElementById("shippingForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  var form = e.target, msg = document.getElementById("shippingMsg"), cont = document.getElementById("continuePayment");
+  var ref = "RR-" + Date.now().toString(36).toUpperCase();
+  document.getElementById("orderReference").value = ref;
+  var data = {order_reference: ref, product_key: selectedProduct, product: PRODUCT_DETAILS[selectedProduct].label, amount: PRODUCT_DETAILS[selectedProduct].price};
+  new FormData(form).forEach(function(v,k){ data[k] = v; });
+  data._subject = "RoadReady — SHIPPING DETAILS " + ref + " (match Stripe payment by email)";
+  msg.style.color = "var(--txt)";
+  msg.textContent = "Saving your shipping address…";
+  fetch(form.action, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", "Accept": "application/json" },
+    body: JSON.stringify(data)
+  }).then(function(r){
+    if (!r.ok) throw new Error("save failed");
+    var url = new URL(LINKS[selectedProduct]);
+    url.searchParams.set("client_reference_id", ref);
+    if (data.email) url.searchParams.set("prefilled_email", data.email);
+    cont.href = url.href;
+    cont.textContent = "Continue to Secure Payment — " + PRODUCT_DETAILS[selectedProduct].price;
+    cont.style.display = "inline-block";
+    msg.style.color = "var(--green)";
+    msg.textContent = "✓ Shipping address saved. Order reference " + ref + ". Now continue to Stripe and use the same email to pay.";
+    cont.scrollIntoView({behavior: "smooth", block: "center"});
+  }).catch(function(){
+    cont.style.display = "none";
+    msg.style.color = "#ff6b5e";
+    msg.textContent = "That didn't save — check your connection and try again. Please don't pay yet; we need the shipping address first.";
+  });
+});
+/* Email capture → FormSubmit AJAX. First-ever submission triggers a one-time
+   activation email to Rag3verse@gmail.com — someone must click it once. */
+document.getElementById("captureForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  var form = e.target, msg = document.getElementById("captureMsg");
+  var data = {};
+  new FormData(form).forEach(function(v,k){ data[k] = v; });
+  fetch(form.action, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", "Accept": "application/json" },
+    body: JSON.stringify(data)
+  }).then(function(r){
+    if (r.ok) { form.reset(); msg.textContent = "✓ You're in — your $5 code (ROAD5) is on its way to your inbox."; }
+    else { msg.textContent = "That didn't go through — try once more."; }
+  }).catch(function(){ msg.textContent = "That didn't go through — try once more."; });
+});
+</script>
+</body>
+</html>
