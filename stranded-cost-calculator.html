@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stranded Cost Calculator: What One Flat Tire Really Costs | RoadReady</title>
+<meta name="description" content="Add up the real cost of being stranded with a flat tire — tow bill, wait time, missed work, ruined plans — and compare it with a $49.99 kit in the trunk. Run your own numbers, no signup.">
+<link rel="canonical" href="https://rag3verse-coder.github.io/roadready-supply/stranded-cost-calculator.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Stranded Cost Calculator: What One Flat Tire Really Costs",
+  "author": { "@type": "Organization", "name": "RoadReady Supply Co." },
+  "publisher": { "@type": "Organization", "name": "RoadReady Supply Co." },
+  "datePublished": "2026-11-04",
+  "mainEntityOfPage": "https://rag3verse-coder.github.io/roadready-supply/stranded-cost-calculator.html"
+}
+</script>
+<style>
+body{font-family:system-ui,-apple-system,Arial,sans-serif;margin:0;background:#0f1113;color:#e8e8e8;line-height:1.6}
+header{background:#17191c;padding:32px 20px;border-bottom:3px solid #ffb400}
+header h1{margin:0 0 8px;font-size:30px;line-height:1.2;max-width:760px}
+header p{color:#b9b9b9;max-width:700px;margin:0}
+main{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+h2{font-size:23px;margin-top:36px}
+h3{font-size:18px;margin-top:26px}
+.card{background:#1b1e22;border:1px solid #2a2e33;border-radius:12px;padding:20px;margin:18px 0}
+.card.win{border-color:#ffb400}
+.muted{color:#b9b9b9;font-size:14px}
+a{color:#ffb400}
+.cta{display:block;text-align:center;background:#ffb400;color:#111;font-weight:800;text-decoration:none;padding:15px;border-radius:10px;margin:20px 0}
+label{display:block;margin:14px 0 4px;font-weight:700}
+input[type=number],select{width:100%;box-sizing:border-box;padding:10px;border-radius:8px;border:1px solid #2a2e33;background:#0f1113;color:#e8e8e8;font-size:16px}
+.big{font-size:18px;font-weight:800}
+.result{font-size:26px;font-weight:800;color:#ffb400}
+table{width:100%;border-collapse:collapse;margin:14px 0}
+td,th{border-bottom:1px solid #2a2e33;padding:8px 4px;text-align:left}
+td:last-child,th:last-child{text-align:right}
+nav{font-size:14px;color:#b9b9b9}
+@media(max-width:640px){header h1{font-size:25px}}
+</style>
+</head>
+<body>
+<header>
+<h1>Stranded Cost Calculator: What One Flat Tire Really Costs</h1>
+<p>A flat tire never sends just one bill. There is the tow truck, the hours on the shoulder, the shift or appointment you miss, and the ride home you did not plan to buy. This calculator adds up your version of that night — with your numbers, not ours — and puts it next to the price of the kit that keeps it from happening twice.</p>
+<p class="muted">Prices and ranges below reflect typical US roadside costs and the RoadReady listing as of October 2026. Your tow bill, wait time, and hourly value will differ — change any number and the math updates. This page reports no hands-on testing and quotes no customer reviews — none exist yet to quote.</p>
+</header>
+<main>
+<nav>On this page: <a href="#calc">the calculator</a> · <a href="#breakdown">where the money actually goes</a> · <a href="#scenarios">three nights, three totals</a> · <a href="#kit">the kit</a> · <a href="#faq">FAQ</a></nav>
+<h2 id="calc">Run your own numbers</h2>
+<div class="card win">
+<label for="tow">Tow or roadside call-out cost ($)</label>
+<input type="number" id="tow" value="110" min="0" max="500" step="5">
+<p class="muted">Typical range $75–$150 for a local tow; a longer haul or a late-night call runs higher.</p>
+<label for="wait">Hours stuck waiting</label>
+<input type="number" id="wait" value="2" min="0" max="12" step="0.5">
+<label for="hourly">What an hour of your time is worth ($/hour)</label>
+<input type="number" id="hourly" value="25" min="0" max="200" step="5">
+<p class="muted">Use your hourly pay, or what missing the evening would cost you — a lost shift, a missed gig, a rescheduled appointment fee.</p>
+<label for="extra">Other costs: ride home, missed appointment, spoiled plans ($)</label>
+<input type="number" id="extra" value="20" min="0" max="500" step="5">
+<label for="times">How many times has this happened (or could it) in a year?</label>
+<select id="times">
+<option value="1" selected>Once</option>
+<option value="2">Twice</option>
+<option value="3">Three times</option>
+</select>
+<table>
+<tr><th>One stranded night, your way</th><th id="single">$180.00</th></tr>
+<tr><th>Times per year</th><th id="count">× 1</th></tr>
+<tr><th>Your yearly stranded cost</th><th id="yearly">$180.00</th></tr>
+<tr><th>RoadReady Tire Inflator Kit</th><th>$49.99</th></tr>
+<tr><th>You keep, year one</th><th id="saved" class="result">$130.01</th></tr>
+</table>
+<p id="verdict" class="big">One bad night pays for the kit more than three times over — and the kit is still in your trunk for the next one.</p>
+<p class="muted">The kit handles low pressure and slow leaks. It does not repair a cut sidewall or a tire losing air fast — those still need a shop or a tow, and no calculator should pretend otherwise.</p>
+</div>
+<script>
+function calc(){
+  var tow=parseFloat(document.getElementById('tow').value)||0;
+  var wait=parseFloat(document.getElementById('wait').value)||0;
+  var hourly=parseFloat(document.getElementById('hourly').value)||0;
+  var extra=parseFloat(document.getElementById('extra').value)||0;
+  var times=parseInt(document.getElementById('times').value)||1;
+  var single=tow+(wait*hourly)+extra;
+  var yearly=single*times;
+  var saved=yearly-49.99;
+  document.getElementById('single').textContent='$'+single.toFixed(2);
+  document.getElementById('count').textContent='× '+times;
+  document.getElementById('yearly').textContent='$'+yearly.toFixed(2);
+  document.getElementById('saved').textContent='$'+saved.toFixed(2);
+  document.getElementById('verdict').textContent = saved>0
+    ? 'At your numbers, one year of stranded nights costs $'+yearly.toFixed(2)+' — the $49.99 kit pays for itself and leaves $'+saved.toFixed(2)+' in your pocket.'
+    : 'At your numbers the kit costs more than one incident — but it also covers every future slow leak, cold morning, and low tire, not just one night.';
+}
+['tow','wait','hourly','extra','times'].forEach(function(id){
+  document.getElementById(id).addEventListener('input',calc);
+  document.getElementById(id).addEventListener('change',calc);
+});
+calc();
+</script>
+<h2 id="breakdown">Where the money actually goes</h2>
+<p>Most people price a flat tire at the tow bill and stop there. The tow bill is usually the smallest honest number in the night, because it is the only one that arrives as a receipt.</p>
+<h3>The tow or call-out</h3>
+<p>A local tow commonly runs $75–$150, and that is before mileage beyond the included radius, after-hours surcharges, or a second truck when the first cannot take the vehicle. Roadside assistance memberships soften this — until the one night the membership does not cover the distance, the vehicle, or the hour.</p>
+<h3>The wait</h3>
+<p>Two hours is a kind figure. A truck dispatched across town at rush hour or at 1 AM takes longer, and every minute of it is spent on a shoulder, in a parking lot, or in a car that cannot move. Priced at even a modest hourly value, the wait alone often matches the tow bill.</p>
+<h3>The missed everything else</h3>
+<p>The shift that starts without you, the gig that goes to another driver, the appointment with a no-show fee, the ride home you buy because the car is on a flatbed — none of these appear on the tow receipt, and all of them are real. This is why two drivers can have the same flat tire and wildly different bills: the tire is the same, the night is not.</p>
+<p class="big">The kit does not make flat tires free. It makes the common ones — the slow leak, the cold-morning drop, the tire a few PSI down — a ten-minute stop instead of a night.</p>
+<h2 id="scenarios">Three nights, three totals</h2>
+<div class="card">
+<h3>Night one: the commuter, $75 tow, 1.5 hours, $20 ride home</h3>
+<p>$75 + (1.5 × $25) + $20 = <strong>$132.50</strong>. The kit at $49.99 leaves $82.51 of that night unspent — and it is still in the trunk tomorrow.</p>
+</div>
+<div class="card">
+<h3>Night two: the gig driver, $110 tow, 2 hours of lost fares, $40 missed delivery window</h3>
+<p>$110 + (2 × $30) + $40 = <strong>$210.00</strong>. For a driver, the flat is not an inconvenience line item; it is income that never comes back, because surge hours do not wait for tow trucks.</p>
+</div>
+<div class="card">
+<h3>Night three: the parent on a road trip, $150 tow, 3 hours, $60 for a hotel-room night salvaged late</h3>
+<p>$150 + (3 × $25) + $60 = <strong>$285.00</strong>. Away from home, every part of the bill inflates: the tow is longer, the wait is lonelier, and the backup plan costs money too.</p>
+</div>
+<p>None of these scenarios is a customer story — they are arithmetic, built from the same ranges the calculator uses, so you can check them yourself.</p>
+<h2 id="kit">The kit the math points to</h2>
+<div class="card win">
+<h3>RoadReady Tire Inflator Kit — $49.99 (list $79.99)</h3>
+<p>A 150-PSI-rated pump with a live readout, a cutoff that stops at the number you set, adapters for cars, motorcycles, bicycles, and balls, and a case. The detail the calculator cannot price is the fallback power: the pump can draw from its own rechargeable cell or from the car's 12V socket, so a drained internal battery does not end the repair on the night it is needed. How that compares with the rest of the under-$50 field is laid out on the <a href="https://rag3verse-coder.github.io/roadready-supply/best-portable-tire-inflator-under-50.html">under-$50 inflator comparison</a>, and if you have never found your car's number, the <a href="https://rag3verse-coder.github.io/roadready-supply/psi-finder.html">PSI Finder</a> walks you to the door-jamb sticker.</p>
+<p><strong>The 2-pack ($89.99)</strong> is the version of this math for a two-car household: one kit per trunk, so the second car's bad night is covered by the same decision.</p>
+<a class="cta" href="https://rag3verse-coder.github.io/roadready-supply/">Get the RoadReady Kit — $49.99 · 2-Pack $89.99</a>
+</div>
+<p>Before you buy, check the <a href="https://rag3verse-coder.github.io/roadready-supply/trunk-kit-checklist.html">Trunk Kit Checklist</a> — the kit is item #1, and the other nine items are the difference between a stocked trunk and a hopeful one.</p>
+<h2 id="faq">FAQ</h2>
+<div class="card">
+<h3>Is the tow range $75–$150 realistic everywhere?</h3>
+<p>It is a typical range for a short local tow in the US, not a quote. Rural distances, after-hours calls, and heavy vehicles all push it higher — which is why the calculator lets you type your own number instead of trusting ours.</p>
+</div>
+<div class="card">
+<h3>Does the kit really replace a tow?</h3>
+<p>Only for the common cases: slow leaks, cold-weather pressure drops, and tires a few PSI down. A cut, a blown bead, or a tire going flat in minutes still needs a shop or a tow. The honest claim is narrower and stronger: most stranded nights start as a pressure problem, and pressure problems are the ones a kit solves.</p>
+</div>
+<div class="card">
+<h3>Why count my time as money?</h3>
+<p>Because the wait is the part nobody reimburses. Even if your job pays you anyway, two hours on a shoulder are two hours you do not get back — and for hourly, gig, and shift workers, they are literally unpaid. The calculator lets you set that value to $0 if you prefer; the tow and ride costs alone usually still clear the kit's price.</p>
+</div>
+<div class="card">
+<h3>What if I already have roadside assistance?</h3>
+<p>Then your tow line may be $0 — run the calculator that way. The wait, the missed shift, and the ruined evening remain, and they are the reason many members still carry a kit: assistance gets you rescued, a kit gets you moving.</p>
+</div>
+<div class="card">
+<h3>How accurate is the "you keep" number?</h3>
+<p>It is exactly as accurate as the numbers you typed. It is not a promise, a rebate, or a savings guarantee — it is your inputs minus $49.99. Change any input and it changes with it, which is the point.</p>
+</div>
+<p class="muted">RoadReady Supply Co. — The tire kit that never leaves you stranded. Support: support@roadreadysupply.co (confirmation pending — see the store page). Secure checkout powered by Stripe. © 2026 RoadReady Supply Co.</p>
+</main>
+</body>
+</html>
