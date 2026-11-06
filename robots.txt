@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rag3verse-coder.github.io/roadready-supply/sitemap.xml
